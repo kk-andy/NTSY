@@ -1,0 +1,273 @@
+.edit-selection {
+    .el-upload--picture-card {
+        width: 98px;
+        height: 98px;
+        line-height: 98px;
+    }
+    .el-icon-delete {
+        cursor: pointer;
+    }
+    .disabled-delete {
+        cursor: not-allowed
+    }
+    .variant-attr {
+        &>div {
+            display: flex;
+            align-items: center;
+            &>span {
+                min-width: 100px;
+            }
+            &>div {
+                display: flex;
+                flex-wrap: wrap;
+                &>div {
+                    display: flex;
+                    align-items: center;
+                }
+                // flex-wrap: wrap;
+            }
+            .overflow-scroll {
+                // height: 300px;
+                // overflow-y: scroll;
+            }
+        }
+    }
+}
+
+.product_name {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    .el-icon-arrow-right {
+        font-size: 16px;
+    }
+}
+
+.categoryChooseOutDiv {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    overflow-x: auto;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    .categoryChooseMiddleDiv {
+        width: auto;
+        display: flex;
+        // flex-wrap: wrap;
+        .categoryChooseInDiv {
+            margin-right: 14px;
+            border: 1px solid #ddd;
+            height: 308px;
+            overflow-y: auto;
+            border-radius: 4px;
+            width: 245px;
+            .categoryList {
+                .categoryDiv {
+                    width: 100%;
+                    cursor: pointer;
+                    height: 24px;
+                    line-height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #434649;
+                    margin-bottom: 3px;
+                    .categoryNames {
+                        display: inline-block;
+                        width: 200px;
+                        overflow: hidden;
+                        padding-left: 10px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .el-icon-arrow-right {
+                        font-weight: bold;
+                    }
+                }
+                .active {
+                    background-color: rgba(254, 219, 207, 0.5);
+                    color: #333;
+                }
+                .categoryDiv:hover {
+                    background-color: rgba(254, 219, 207, 0.3);
+                }
+            }
+        }
+    }
+    .overflowx-sxroll {
+        overflow-x: scroll;
+        // width: ;
+    }
+}
+.search-input {
+    & > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      button {
+        margin-left: 20px;
+      }
+    }
+    & > div:nth-child(2) {
+      ul {
+        list-style: none;
+        li {
+          line-height: 36px;
+          cursor: pointer;
+        }
+        li:hover {
+          background-color: rgba(254,219,207,0.3);
+        }
+        li:active{
+          background-color: rgba(254,219,207,0.3);
+        }
+      }
+      .overflow-scroll-y {
+        height: 300px;
+        overflow-y: scroll;
+      }
+    }
+  }
+.edit-selection {
+    .el-form {
+        &>div {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            h3 {
+                background-color: #eee;
+            }
+        }
+    }
+    .no-select-group {
+        .el-form-item {
+            margin-bottom: 0px;
+            .product_name {
+                span {
+                    font-size: 13px;
+                    color: #933;
+                    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                }
+                .el-icon-arrow-right {
+                    font-size: 13px;
+                }
+            }
+            .el-form-item__content {
+                span {
+                    color: #ff4949;
+                    margin-right: 4px;
+                    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                }
+            }
+        }
+        .no-select-pro {
+            color: red;
+        }
+    }
+    .set-margin-bottom {
+        .el-form-item {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.el-dialog__header {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px;
+    background: #eee;
+    &>span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+.disflex-transport {
+    .el-card__body {
+        display: flex;
+        flex-direction: column;
+        &>div {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-content {
+            max-width: 750px;
+        }
+    }
+}
+
+.clear-margin-bottom {
+    display: flex;
+    align-items: center;
+    .el-form-item {
+        margin-bottom: 0px;
+    }
+}
+
+.table_content {
+    .el-form-item__content {
+        width: 100%;
+        .el-table__header {
+            width: 100%;
+        }
+    }
+}
+
+.el-input-group__append {
+    padding: 0 5px;
+}
+
+.button_display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-left: 25px;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.img-form-item .el-form-item__content {
+    width: 100%;
+    padding-left: 80px;
+    // display: flex;
+    div:nth-child(2) {
+        position: absolute;
+        right: 10px;
+        top: -36px;
+    }
+}
+
+.margin-bottom-form {
+    height: 25px;
+    ;
+}
+.edit-selection-add-img{
+    height: 98px;
+    width: 98px;
+    line-height: 98px;
+    border: 1px dashed #c0ccda;
+    cursor: pointer;
+    vertical-align: top;
+    background-color: #fbfdff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    i {
+        font-size: 28px;
+        color: #8c939d;
+    }
+}
+.dit-selection-add-img:focus, .edit-selection-add-img:hover {
+    border-color: #1890ff;
+    color: #1890ff;
+}
+.product_title_clearbg {
+    .el-textarea {
+        .el-input__count {
+            background-color:rgba(255,255,255,0.1)
+        }
+    }
+}

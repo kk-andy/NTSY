@@ -1,0 +1,2 @@
+const font_formats = `微软雅黑=Microsoft YaHei,Helvetica Neue,PingFang SC,sans-serif;苹果官方=PingFang SC,Microsoft YaHei,sans-serif;宋体=simsun,serif;仿宋体=FangSong,serif;黑体=SimHei,sans-serif;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Courier New=courier new,courier,monospace;AkrutiKndPadmini=Akpdmi-n;Lato=Lato;Andale Mono=andale mono,times;Comic Sans MS=comic sans ms,sans-serif;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;`
+export default font_formats

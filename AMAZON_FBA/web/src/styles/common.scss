@@ -1,0 +1,301 @@
+$yh: "Microsoft yahei";
+
+// 移动端 统一样式
+.content {
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+  margin: 55px auto;
+}
+
+a:link {
+  font-size: 12px;
+
+  color: #1d2023;
+
+  text-decoration: none;
+}
+
+a:visited {
+  font-size: 12px;
+
+  color: #1d2023;
+
+  text-decoration: none;
+}
+
+a:hover {
+  // font-size: 12px;
+
+  color: #069797;
+
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $yh;
+  //    font-size:calc(100vw/7.5);      // 移动端 适配    750:100 = 100vw:x  7.5:1 = 100vw:x  x =100vw/7.5
+  //    font-size:-webket-calc(100vw/7.5);   // 设计稿宽度  640px
+}
+
+header {
+  height: 54px;
+  background: rgba(50, 60, 80, 1);
+
+  .head-container {
+    height: 54px;
+
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 54px;
+    overflow: hidden;
+    display: table;
+
+    .logo img {
+      width: 320px;
+      height: 23px;
+      float: left;
+    }
+
+    .h-avatar {
+      // display: table-cell;
+      // vertical-align: middle;
+      float: right;
+      margin-top: 3px;
+    }
+
+    .logo {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    // .h-avatar img {
+    //   width: 48px;
+    //   height: 48px;
+    //   float: right;
+    // }
+  }
+}
+
+#nprogress .bar {
+  background: #069797 !important; //自定义颜色
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-2 {
+  border-radius: 2px;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.br-4 {
+  border-radius: 4px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.p23{
+  padding:23px 0 !important;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+// 项目的样式统一的初始化
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+ol,
+ul,
+dl,
+dd,
+p,
+textarea,
+input,
+select,
+option,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(72, 81, 100, 1);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+}
+
+ol,
+ul,
+textarea,
+input,
+option,
+th,
+td {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+//.clearfix {*zoom:1;}
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+textarea,
+input {
+  outline: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+button {
+  outline: none;
+}
+
+.pagehead {
+  .back {
+    position: absolute;
+    left: 30px;
+  }
+
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 16px;
+
+  .p-tit {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  p>span {
+    position: relative;
+    font-size: 14px;
+    color: #5c6371;
+    margin-right: 40px;
+    // border-right: 1px solid #979DAB;
+    // padding-right: 5px;
+    // margin-right: 5px;
+  }
+
+  p>span:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    right: -20px;
+    top: 50%;
+    height: 14px;
+    transform: translateY(-50%);
+    background-color: #979dab;
+  }
+
+  p>span:nth-last-child(1):after {
+    width: 0;
+  }
+}

@@ -1,0 +1,95 @@
+.chart-container {
+    width: 100%;
+      .form_content {
+          border: 1px solid #ddd;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          width: 90%;
+          .item-title {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #eee;
+              color: #a0a3a6;
+              margin-bottom: 20px;
+              font-size: 13px;
+              // border-bottom: 1px solid #ddd;
+              padding: 10px;
+              .el-form-item {
+                  margin-bottom: 0px;
+              }
+              & > div {
+                  span {
+                      width: fit-content;
+                      margin-right: 10px;
+                  }
+                  display: flex;
+                  align-items: center;
+              }
+          }
+          .no-select-group {
+              .el-form-item {
+                  margin-bottom: 0px;
+                  .product_name {
+                      span {
+                          font-size: 13px;
+                          color: #933;
+                          font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                      }
+                      .el-icon-arrow-right {
+                          font-size: 13px;
+                      }
+                  }
+              }
+              .no-select-pro {
+                  color: red;
+              }
+          }
+      }
+      /* 导航栏的样式 */
+  
+  .navs {
+      position: fixed;
+      top: 50%;
+      right: -140px;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      color: #bdc3c7;
+      border-left: 1px solid rgb(232, 234, 236);
+      list-style: none;
+  }
+  
+      .navs li {
+          height: 35px;
+          line-height: 35px;
+          padding: 0 20px;
+          line-height: 1.6;
+          font-size: 16px;
+          cursor: pointer;
+          position: relative;
+          width: 100%;
+          white-space: nowrap;
+          /* // overflow: hidden; */
+          text-overflow: ellipsis;
+      }
+  
+      .navs li.active {
+          color: rgb(64, 158, 255);
+          transition: all 1s ease;
+      }
+  
+      .navs li.active::before {
+          content: "";
+          display: block;
+          background: url("~@/icons/anchor.png") no-repeat;
+          /*兼容没测 */
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 5px;
+          left: -8.5px;
+          font-size: 16px;
+          color: rgb(64, 158, 255);
+          transition: all 2s ease;
+      }
+  }

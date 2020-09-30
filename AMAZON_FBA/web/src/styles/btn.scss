@@ -1,0 +1,162 @@
+@import './variables.scss';
+@mixin colorBtn($color) {
+    background: $color;
+    &:hover {
+        color: $color;
+        &:before,
+        &:after {
+            background: $color;
+        }
+    }
+}
+
+.blue-btn {
+    @include colorBtn($blue)
+}
+
+.light-blue-btn {
+    @include colorBtn($light-blue)
+}
+
+.red-btn {
+    @include colorBtn($red)
+}
+
+.pink-btn {
+    @include colorBtn($pink)
+}
+
+.green-btn {
+    @include colorBtn($green)
+}
+
+.tiffany-btn {
+    @include colorBtn($tiffany)
+}
+
+.yellow-btn {
+    @include colorBtn($yellow)
+}
+
+.pan-btn {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: 600ms ease all;
+    position: relative;
+    display: inline-block;
+    &:hover {
+        background: #fff;
+        &:before,
+        &:after {
+            width: 100%;
+            transition: 600ms ease all;
+        }
+    }
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        transition: 400ms ease all;
+    }
+    &::after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.btn_button_primary {
+    font-size: 13px;
+    border-color: rgba(0,176,255,1);
+    color: #fff;
+    background-color: rgba(0,176,255,1);
+    height: 34px;
+    min-width: 100px;
+}
+.btn_button_delete {
+    font-size: 13px;
+    border-color: #f32828;
+    color: #fff;
+    background-color: #f32828;
+    height: 34px;
+    min-width: 80px;
+}
+.btn_button_delete:hover {
+    border-color: rgba(250,84,28,1);
+    background-color: rgba(250,84,28,1);
+    color: #fff;
+}
+.btn_button_primary:hover {
+    border-color: #1890ff;
+    background-color: #1890ff;
+}
+.btn_button_primary_lone {
+    font-size: 13px;
+    border-color: rgba(0,176,255,1);
+    color: #fff;
+    background-color: rgba(0,176,255,1);
+    min-width: 120px;
+    height: 34px;
+}
+
+.btn_group {
+    margin: 15px 0;
+    .el-checkbox {
+        margin-left: 15px;
+    }
+}
+
+.flex_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .el-icon-refresh {
+        color: rgba(0,176,255,1);
+        font-weight: bold;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.custom-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    color: #fff;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+
+/* 文字按钮 */
+
+.text_fenpei,
+.editor {
+    cursor: pointer;
+    color: #337ab7;
+    line-height: 26px;
+}
+
+.text_fenpei:hover,
+.editor:hover {
+    color: #46a6ff;
+    // border-color: #46a6ff;
+    // color: #fff;
+}

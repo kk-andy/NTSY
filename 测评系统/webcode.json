@@ -1,0 +1,285 @@
+{
+    "modules": [{
+            "name": "Dashboard",
+            "url": "/home",
+            "icon": "dashboard",
+            "menus": [{
+                "name": "Dashboard",
+                "url": "/home/dashboard"
+            }]
+        },
+        {
+            "name": "需求管理",
+            "url": "/demandManagement",
+            "icon": "user",
+            "menus": [{
+                "name": "需求列表",
+                "url": "/demandManagement/demandList",
+                "buttons": [
+                    {
+                        "key": "search",
+                        "name": "搜索"
+                    },
+                    {
+                        "key": "newDemand",
+                        "name": "新增需求"
+                    },
+                    {
+                        "key": "copy",
+                        "name": "复制"
+                    },
+                    {
+                        "key": "submitCheck",
+                        "name": "提交审核"
+                    }
+                ]
+            }, {
+                "name": "审核派发",
+                "url": "/demandManagement/demandAudit",
+                "buttons": [{
+                        "key": "search",
+                        "name": "搜索"
+                    },
+                    {
+                        "key": "batchRejected",
+                        "name": "批量驳回"
+                    }
+                ]
+            }
+        ]
+        },
+        {
+            "name": "订单管理",
+            "url": "/releaseManagement",
+            "icon": "user",
+            "menus": [{
+                    "name": "测评下单",
+                    "url": "/releaseManagement/evaluationOrder",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "changeEvaluating",
+                            "name": "更改评测人"
+                        },
+                        {
+                            "key": "errorPigeonhole",
+                            "name": "异常归档"
+                        }
+                    ]
+                },
+                {
+                    "name": "物流跟踪",
+                    "url": "/releaseManagement/logisticsTracking",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "errorPigeonhole",
+                            "name": "异常归档"
+                        }
+                    ]
+                },
+                {
+                    "name": "留评跟踪",
+                    "url": "/releaseManagement/leaveReviewTracking",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "errorPigeonhole",
+                            "name": "异常归档"
+                        }
+                    ]
+                },
+                {
+                    "name": "运营核评",
+                    "url": "/releaseManagement/operationalEvaluation",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "errorPigeonhole",
+                            "name": "异常归档"
+                        },
+                        {
+                            "key": "batchSubmit",
+                            "name": "批量提交"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "财务管理",
+            "url": "/financialManagement",
+            "icon": "user",
+            "menus": [{
+                    "name": "返款操作",
+                    "url": "/financialManagement/rebateOperation",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "errorPigeonhole",
+                            "name": "异常归档"
+                        }
+                    ]
+                },
+                {
+                    "name": "二次返款",
+                    "url": "/financialManagement/onceAgainRebate",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "errorPigeonhole",
+                            "name": "异常归档"
+                        }
+                    ]
+                },
+                {
+                    "name": "信用卡充值",
+                    "url": "/financialManagement/creditCardRecharge",
+                    "buttons": [{
+                        "key": "search",
+                        "name": "搜索"
+                    }]
+                }
+            ]
+        },
+        {
+            "name": "辅助信息",
+            "url": "/supplementaryInformation",
+            "icon": "user",
+            "menus": [{
+                    "name": "买家号库",
+                    "url": "/supplementaryInformation/buyerAccount",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "insert",
+                            "name": "新增"
+                        },
+                        {
+                            "key": "importBtn",
+                            "name": "导入"
+                        },
+                        {
+                            "key": "exportBtn",
+                            "name": "导出"
+                        }
+                    ]
+                },
+                {
+                    "name": "信用卡库",
+                    "url": "/supplementaryInformation/creditCard",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "insert",
+                            "name": "新增"
+                        },
+                        {
+                            "key": "importBtn",
+                            "name": "导入"
+                        },
+                        {
+                            "key": "exportBtn",
+                            "name": "导出"
+                        }
+                    ]
+                },
+                {
+                    "name": "服务项目价卡",
+                    "url": "/supplementaryInformation/serviceItems",
+                    "buttons": [{
+                            "key": "search",
+                            "name": "搜索"
+                        },
+                        {
+                            "key": "insert",
+                            "name": "新增"
+                        },
+                        {
+                            "key": "exportBtn",
+                            "name": "导出"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "记录统计",
+            "url": "/recordStatistics",
+            "icon": "user",
+            "menus": [{
+                "name": "测评完成",
+                "url": "/recordStatistics/evaluationCompleted",
+                "buttons": [{
+                        "key": "search",
+                        "name": "搜索"
+                    },
+                    {
+                        "key": "exportBtn",
+                        "name": "导出"
+                    },
+                    {
+                        "key": "refundSecond",
+                        "name": "二次返款"
+                    }
+                ]
+            }]
+        },
+        {
+            "name": "异常统计",
+            "url": "/abnormalStatistics",
+            "icon": "user",
+            "menus": [{
+                "name": "异常归档",
+                "url": "/abnormalStatistics/abnormalFile",
+                "buttons": [{
+                        "key": "search",
+                        "name": "搜索"
+                    },
+                    {
+                        "key": "exportBtn",
+                        "name": "导出"
+                    },
+                    {
+                        "key": "recover",
+                        "name": "恢复环节"
+                    }
+                ]
+            }]
+        },
+        {
+            "name": "权限管理",
+            "url": "/dataPermission",
+            "icon": "user",
+            "menus": [{
+                "name": "数据权限",
+                "url": "/dataPermission/index",
+                "buttons": [{
+                        "key": "search",
+                        "name": "搜索"
+                    },
+                    {
+                        "key": "edit",
+                        "name": "编辑"
+                    }
+                ]
+            }]
+        }
+    ]
+}
